@@ -115,7 +115,7 @@ def fill_puzzle(puzzle):
 
 
 def answer():
-    f = open('p096_sudoku.txt', 'r').readlines()
+    f = open('p096_sudoku.rtf', 'r').readlines()
     data = ''.join(line[:9] for line in f if not 'Grid' in line)
     data = [data[n:(n + 81)] for n in range(0, len(data), 81)]
 
